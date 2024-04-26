@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Blog Haven</title>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">Blog Haven</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/">Home</a></li>
+                        <!-- You can include navigation items dynamically here if needed -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg" height="200" alt="Blog Haven Home" />
+                </div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">Welcome to Blog Haven</h1>
+                    <p>"Blog Haven is your go-to source for a variety of articles about tech, wellness, travel, and other topics. Our friendly blogging and reading community encourages interaction and creativity. Discover new voices and viewpoints, participate in insightful conversations, and locate your next inspiration. Come along with us as we create a lively virtual community where people connect and curiosity flourishes. Greetings from Blog Haven, your place for discovery, community, and motivation.</p>
+                    <a id="signupBtn" class="btn btn-primary" href="#">Sign up!</a>
+                </div>
+            </div>
+            <!-- Call to Action-->
+            <div class="card text-white bg-secondary my-5 py-4 text-center">
+                <div class="card-body"><p class="text-white m-0">Blogs of the month!</p></div>
+            </div>
+            <!-- Content Row-->
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Adventure Seekers</h2>
+                            <p class="card-text">This blog is primarily about travel, extreme sports, and outdoor experiences. The site offers advice, guidelines, and first-hand accounts from ardent explorers, with a monthly focus on a new location or adventure activity. The book "Adventure Junkies" encourages readers to enjoy the excitement of discovery through activities like skydiving over breathtaking scenery and hiking in isolated mountains.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="blog/1">Continue reading...</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Hub for Healthful Habits</h2>
+                            <p class="card-text">This blog targets health-conscious readers and provides helpful guidance on diet, exercise, mental health, and lifestyle choices. Readers can discover fresh recipes, exercise plans, mindfulness exercises, and success stories from individuals who have adopted healthy habits every month. "Healthy Habits Hub" aims to give readers the tools to prioritize their health and adopt long-lasting lifestyle changes.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="blog/2">Continue reading...</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Tech Talk Tribune</h2>
+                            <p class="card-text">This blog, which targets experts in the sector and tech lovers, covers the most recent advancements, trends, and breakthroughs in the technology field. "Tech Talk Tribune" offers perceptive commentary and professional perspectives on anything from assessments of the newest devices to in-depth studies of cutting-edge technology like blockchain and artificial intelligence. Readers may anticipate being informed about the fast-changing tech landscape and its effects on society each month.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="blog/3">Continue reading...</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Blog Haven 2024</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Modal for sign up-->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signupModalLabel">Sign Up for Our Newsletter</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="signupForm">
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nameInput" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="nameInput" placeholder="Your Name" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button id="signupConfirmBtn" type="button" class="btn btn-primary">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JavaScript to trigger the modal and handle form submission -->
+        <script>
+            document.getElementById('signupBtn').addEventListener('click', function () {
+                var myModal = new bootstrap.Modal(document.getElementById('signupModal'));
+                myModal.show();
+            });
+
+            document.getElementById('signupConfirmBtn').addEventListener('click', function () {
+                var email = document.getElementById('emailInput').value;
+                var name = document.getElementById('nameInput').value;
+
+                // Check if fields are empty
+                if (email.trim() === '' || name.trim() === '') {
+                    alert('Please fill in all fields.');
+                } else {
+                    alert('Thanks for signing up to our weekly blog newsletter!');
+                    document.getElementById('signupForm').reset();
+                    var myModal = new bootstrap.Modal(document.getElementById('signupModal'));
+                    myModal.hide();
+                    document.getElementById('signupBtn').innerText = 'Signed Up!';
+                    document.getElementById('signupBtn').setAttribute('disabled', true);
+                    // Hide the signup button after signing up
+                    document.getElementById('signupBtn').style.display = 'none';
+                }
+            });
+        </script>
+        <!-- Service Worker registration -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js');
+            };
+        </script>
+    </body>
+</html>

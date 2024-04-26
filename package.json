@@ -1,0 +1,38 @@
+{
+  "name": "week3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "bootstrap": "^5.3.3",
+    "chalk": "^4.1.2",
+    "debug": "^4.3.4",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "jquery": "^3.7.1",
+    "mongod": "^2.0.0",
+    "mongoose": "^8.2.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0",
+    "save": "^2.9.0",
+    "save-dev": "^0.0.1-security"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
